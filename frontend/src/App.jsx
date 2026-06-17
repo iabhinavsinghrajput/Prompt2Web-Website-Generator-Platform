@@ -1,0 +1,22 @@
+import { BrowserRouter, Route,Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Pricing from './pages/Pricing'
+import Dashboard from './pages/Dashboard'
+import Generate from './pages/Generate'
+import WebsiteEditor from './pages/websiteEditor'
+import LiveSite from './pages/LiveSite'
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/pricing' element={<Pricing/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/generate' element={<Generate/>}/>
+        <Route path='/editor/:id' element={<WebsiteEditor/>}/>
+        <Route path='/site/:id' element={<LiveSite/>}/>
+      </Routes>
+    </BrowserRouter>
+  )
+}
