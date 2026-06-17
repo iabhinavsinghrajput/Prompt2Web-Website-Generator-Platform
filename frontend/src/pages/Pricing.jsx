@@ -13,7 +13,7 @@ const plans = [
         name: "Free",
         price: '₹0',
         credits: 100,
-        description: "Perfect to explore Dora ai",
+        description: "Perfect to explore Prompt2Web",
         features: [
             "AI website generation",
             "Responsive html outputs",
