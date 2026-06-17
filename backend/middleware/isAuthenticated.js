@@ -3,7 +3,13 @@ import { User } from '../models/userModel.js'
 
 export const isAuthenticated = async (req, res, next) => {
     try {
-        const token = req.cookies.token
+        let token = req.cookies.token
+        if (!token && req.headers.authorization) {
+            const parts = req.headers.authorization.split(' ')
+            if (parts.length === 2 && parts[0] === 'Bearer') {
+                token = parts[1]
+            }
+        }
         if (!token) {
             return res.status(400).json({
                 message: "Token not found"
