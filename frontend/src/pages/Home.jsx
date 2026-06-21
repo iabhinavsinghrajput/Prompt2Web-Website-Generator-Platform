@@ -73,7 +73,7 @@ export default function Home() {
           >
             <button
               onClick={() => setShowLoginModal(true)}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-xl font-semibold transition"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-xl font-semibold transition cursor-pointer"
             >
               Start Building
               <ArrowRight size={18} />
