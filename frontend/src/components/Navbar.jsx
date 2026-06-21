@@ -44,7 +44,7 @@ export default function Navbar() {
             {/* Logo */}
           <div
             onClick={() => navigate("/")}
-            className="flex items-center gap-2 cursor-pointer bg-white/5 p-2 px-4 rounded-2xl border border-zinc-600"
+            className="flex items-center gap-2  bg-white/5 p-2 px-4 rounded-2xl border border-zinc-600"
           >
             <img src="/ai2.png" className="w-7" />
 
