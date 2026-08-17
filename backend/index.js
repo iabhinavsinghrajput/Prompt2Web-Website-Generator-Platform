@@ -15,7 +15,7 @@ app.use(cookieParser())
 app.use(cors({
     origin: [
         'http://localhost:5173', 
-        'https://prompt2web-website-generator-platform-1.onrender.com', 
+        'https://prompt2web-website-generator-platform.onrender.com', 
         process.env.FRONTEND_URL
     ].filter(Boolean),
     credentials: true
