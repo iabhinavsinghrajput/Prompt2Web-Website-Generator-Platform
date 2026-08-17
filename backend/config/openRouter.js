@@ -6,7 +6,7 @@ export const generateResponse = async (prompt) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'deepseek/deepseek-chat',
+      model: 'google/gemini-2.0-flash-exp:free',
       messages: [
         {
           role: 'system',
@@ -18,7 +18,7 @@ export const generateResponse = async (prompt) => {
         },
       ],
       temperature: 0.2,
-      max_tokens: 2000
+      max_tokens: 8000
     }),
   });
   if (!res.ok) {
