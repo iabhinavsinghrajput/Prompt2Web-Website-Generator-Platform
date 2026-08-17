@@ -13,8 +13,12 @@ const PORT = process.env.PORT || 3000
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:'https://prompt2web-website-generator-platform-1.onrender.com',
-    credentials:true
+    origin: [
+        'http://localhost:5173', 
+        'https://prompt2web-website-generator-platform-1.onrender.com', 
+        process.env.FRONTEND_URL
+    ].filter(Boolean),
+    credentials: true
 }))
 
 
