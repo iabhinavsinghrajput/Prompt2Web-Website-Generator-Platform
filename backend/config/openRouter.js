@@ -6,7 +6,7 @@ export const generateResponse = async (prompt) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'openrouter/free',
+      model: 'google/gemini-2.0-flash-lite-preview-02-05:free',
       messages: [
         {
           role: 'system',
@@ -17,6 +17,7 @@ export const generateResponse = async (prompt) => {
           content: prompt,
         },
       ],
+      response_format: { type: "json_object" },
       temperature: 0.2,
       max_tokens: 8000
     }),
