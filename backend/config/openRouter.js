@@ -6,11 +6,11 @@ export const generateResponse = async (prompt) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'openrouter/free',
+      model: 'deepseek/deepseek-chat',
       messages: [
         {
           role: 'system',
-          content: "You must return only valid raw JSON. Do NOT wrap the JSON in ```json or any other markdown. Start the response directly with { and end with }.",
+          content: "You must return only valid raw JSON",
         },
         {
           role: 'user',
