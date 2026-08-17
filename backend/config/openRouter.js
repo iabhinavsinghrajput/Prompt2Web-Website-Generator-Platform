@@ -6,18 +6,17 @@ export const generateResponse = async (prompt) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'google/gemini-2.0-flash-lite-preview-02-05:free',
+      model: 'openrouter/free',
       messages: [
         {
           role: 'system',
-          content: "You must return only valid raw JSON",
+          content: "You must return only valid raw JSON. Do NOT wrap the JSON in ```json or any other markdown. Start the response directly with { and end with }.",
         },
         {
           role: 'user',
           content: prompt,
         },
       ],
-      response_format: { type: "json_object" },
       temperature: 0.2,
       max_tokens: 8000
     }),
