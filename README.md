@@ -10,11 +10,7 @@ Prompt2Web is a high-end, production-grade AI-powered website builder that gener
 
 ---
 
-## 🔗 Live Demo
-Access the live deployment of the platform here:
-👉 **https://prompt2web-website-generator-platform-1.onrender.com/**
 
----
 
 ## ✨ Features
 
