@@ -10,7 +10,7 @@ Prompt2Web is a high-end, production-grade AI-powered website builder that gener
 
 ---
 
-
+https://prompt2web-website-generator-platform-1.onrender.com/
 
 ## ✨ Features
 
@@ -93,6 +93,7 @@ The server will start listening at `http://localhost:8000`.
 ```bash
 cd ../frontend
 npm install
+
 npm run dev
 ```
 The application will launch and run at `http://localhost:5173`.
